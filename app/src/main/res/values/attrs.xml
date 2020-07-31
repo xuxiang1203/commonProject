@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--沉浸式状态栏 自设置顶部高度-->
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomStateText">
+        <attr name="hintText" format="string"/>
+        <attr name="hintTextColor" format="color"/>
+        <attr name="isSelector" format="boolean"/>
+        <attr name="isGradualChange" format="boolean"/>
+        <attr name="solidColor" format="color"/>
+        <attr name="startColor" format="color"/>
+        <attr name="endColor" format="color"/>
+        <attr name="solidPressedColor" format="color"/>
+        <attr name="notEnabledSolidColor" format="color"/>
+        <attr name="strokeColor" format="reference|color"/>
+        <attr name="selectedTextColor" format="reference|color"/>
+        <attr name="solidSelectedColor" format="reference|color"/>
+        <attr name="strokeSelectedColor" format="reference|color"/>
+        <attr name="strokePressedColor" format="reference|color"/>
+        <attr name="cornersRadius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="shape_type">
+            <enum name="LINEAR_GRADIENT" value="0" />
+            <enum name="OVAL" value="1" />
+            <enum name="LINE" value="2" />
+            <enum name="RING" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
