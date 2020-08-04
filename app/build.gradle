@@ -75,4 +75,6 @@ dependencies {
     implementation(name: 'alipaySdk-15.7.4-20200228192259', ext: 'aar')
     //微信支付 登录
     api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //屏幕尺寸适配
+    implementation 'me.jessyan:autosize:1.2.1'
 }

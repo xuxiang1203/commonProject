@@ -42,14 +42,13 @@ public abstract class BaseActivity extends RxAppCompatActivity {
     String FRAGMENTS_TAG = "android:support:fragments";
 
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (savedInstanceState != null) {
             savedInstanceState.putParcelable(FRAGMENTS_TAG, null);
         }
-        AutoDensityUtils.setCustomDensity(this);
+//        AutoDensityUtils.setCustomDensity(this);
         ActivityInfo activityInfo = getClass().getAnnotation(ActivityInfo.class);
         setContentView(getLayout() == -1 ? activityInfo.layout() : getLayout());
         unbinder = ButterKnife.bind(this);
